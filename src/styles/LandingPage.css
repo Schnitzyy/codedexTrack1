@@ -1,0 +1,100 @@
+/* Basic reset and styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Landing Page container */
+.landing-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('../assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* General button styles */
+.button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 3D effect for buttons */
+.button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px);
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Big Events Button */
+.big-button {
+  width: 350px; /* Wider width */
+  height: 120px; /* Adjust height */
+  background: url('../assets/button-texture.png') no-repeat center center;
+  background-size: cover;
+  margin-bottom: 20px; /* Space between big button and small buttons */
+}
+
+/* Smaller buttons for menu and reservation */
+.wide-button {
+  width: 250px; /* Wider width */
+  height: 80px; /* Adjust height */
+  background: url('../assets/button-texture.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* Container for top buttons */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 350px; /* Same width as big button for alignment */
+  margin-bottom: 20px; /* Space between top buttons and About Us button */
+}
+
+/* Smaller Buttons */
+.menu-button, .reservation-button {
+  margin: 0 10px; /* Space between buttons */
+}
+
+/* About Us Button */
+.small-button {
+  width: 160px; /* Smaller width */
+  height: 50px; /* Adjust height */
+  background: url('../assets/button-texture.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* Coffee Cups */
+.coffee-cup {
+  position: absolute;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.coffee-cup-left {
+  left: 10%; /* Adjust position */
+}
+
+.coffee-cup-right {
+  right: 10%; /* Adjust position */
+}

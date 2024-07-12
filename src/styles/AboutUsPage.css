@@ -1,0 +1,27 @@
+.about-us-page {
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-us-page h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .about-us-page p {
+    margin-bottom: 20px;
+  }
+  
+  .about-us-page img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
