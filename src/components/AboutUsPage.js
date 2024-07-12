@@ -6,20 +6,18 @@ const AboutUsPage = () => {
     <div className="about-us-page">
       <h1>About Us</h1>
       <p>
-        Welcome to our coffee shop! We are dedicated to providing the best coffee experience with a focus on quality, sustainability, and community. Our mission is to create a welcoming space for everyone to enjoy.
-      </p>
-      <p>
         <strong>Our Story:</strong>
         <br />
-        Our journey began in 2010 when we opened our first shop in the heart of the city. Over the years, we've grown and evolved, always staying true to our core values of quality and community.
+        Founder, Jonathan Li, shares a passion for board games, boba, and delicious food, so he combined them all to become Sip & Play, Park Slope’s first board game cafe.  It is a straightforward concept, come in with your friends and family to play any board game from our library of 300+ games! We hope when you visit, you also enjoy our coffee, espresso, boba, sandwiches, and snacks!
       </p>
+      <h1>
+        <br></br>
+        <br></br>
+        How it Works:</h1>
       <p>
-        <strong>Our Coffee:</strong>
         <br />
-        We source our beans from the finest growers around the world, ensuring that each cup of coffee is crafted with care and precision. Our baristas are trained to deliver the perfect brew every time.
+        Come on in with your friends and family and play boardgames from our collection of over 500+ games! Just $10 a person for 3 hours of gameplay. ($12 a person Friday-Sunday and Holidays) Play while enjoying bubble tea, coffee, beer sandwiches or salads and have a great time! If you want to guarantee a table, you can make a reservation which is $15 a person for 3 hours of gameplay. 
       </p>
-      <img src="path/to/your/image1.jpg" alt="Our Coffee Shop" />
-      <img src="path/to/your/image2.jpg" alt="Coffee Beans" />
     </div>
   );
 };

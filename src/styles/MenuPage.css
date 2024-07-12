@@ -1,7 +1,41 @@
-/* Menu Page container */
+/* src/styles/MenuPage.css */
+
 .menu-page {
-  width: 100vw;
-  height: 100vh;
-  background: url('../assets/background.png') no-repeat center center fixed;
-  background-size: cover;
+  padding: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: #f0f0f0; /* Match the background color of other pages */
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between sections */
+}
+
+.menu-section {
+  flex: 1;
+  min-width: 300px; /* Ensure each section has a minimum width */
+  background-color: #fff9e6; /* Slight pale yellow color for sections */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+  margin-top: 0;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+  margin-bottom: 10px;
+}
+
+.menu-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
 }

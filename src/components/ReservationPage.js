@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const ReservationPage = () => {
   useEffect(() => {
-    window.location.href = 'https://your-reservation-url.com';
+    window.location.href = 'https://www.exploretock.com/sipnplay/';
   }, []);
 
   return (

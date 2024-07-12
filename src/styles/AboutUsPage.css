@@ -1,27 +1,24 @@
+/* About Us Page styling */
 .about-us-page {
-    padding: 20px;
-    background: #fff;
-    color: #333;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .about-us-page h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    text-align: center;
-  }
-  
-  .about-us-page p {
-    margin-bottom: 20px;
-  }
-  
-  .about-us-page img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+  background-color: #A7C7E7; /* Set background color */
+  color: #333; /* Adjust text color for contrast */
+  padding: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+  min-height: 100vh; /* Ensure full height */
+  box-sizing: border-box;
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Increase font size for heading */
+  line-height: 1.2;
+}
+
+/* Paragraph Styles */
+p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.2em; /* Increase font size for paragraphs */
+}

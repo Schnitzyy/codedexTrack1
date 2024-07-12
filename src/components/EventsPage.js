@@ -1,52 +1,54 @@
 import React from 'react';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import moment from 'moment';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
 import '../styles/EventsPage.css';
 
-const localizer = momentLocalizer(moment);
 
 const events = [
   {
-    title: 'Modern Horizons 3 Pre-release',
-    start: new Date(2024, 5, 7, 18, 0),
-    end: new Date(2024, 5, 7, 21, 0),
-    desc: 'Join us for the Modern Horizons 3 pre-release event!',
-    link: 'https://square.link/u/RmvUCh2J',
+    date: "7/26",
+    name: "Bloomburrow Pre-release 6pm",
+    url: "https://square.link/u/vYewrAQG"
   },
   {
-    title: 'Modern Horizons 3 Pre-release',
-    start: new Date(2024, 5, 8, 11, 0),
-    end: new Date(2024, 5, 8, 14, 0),
-    desc: 'Second day of the Modern Horizons 3 pre-release!',
-    link: 'https://square.link/u/qzq0q6Fq',
+    date: "7/27",
+    name: "Bloomburrow Pre-release 11am",
+    url: "https://square.link/u/v0AzfRyj"
   },
-  // Add more events here
+  {
+    date: "7/27",
+    name: "Bloomburrow Pre-release 5pm",
+    url: "https://square.link/u/pIcxnxZO"
+  },
+  {
+    date: "7/29",
+    name: "Bloomburrow Pre-release 6pm",
+    url: "https://square.link/u/yXIMpJzp"
+  }
 ];
 
-const Event = ({ event }) => (
-  <span>
-    <strong>{event.title}</strong>
-    {event.desc && ': ' + event.desc}
-    {event.link && (
-      <a href={event.link} target="_blank" rel="noopener noreferrer">
-        Register here
-      </a>
-    )}
-  </span>
-);
-
 const EventsPage = () => {
+  React.useEffect(() => {
+    document.title = "Sip n' Play - Events";
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute(
+        'content',
+        'Discover exciting events at Sip n\' Play! Check out what’s happening at our café, perfect for young adults seeking fun and community.'
+      );
+  }, []);
+
   return (
     <div className="events-page">
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: 500 }}
-        components={{ event: Event }}
-      />
+
+      <h1>Upcoming Events</h1>
+      <div className="events-list">
+        {events.map((event, index) => (
+          <div key={index} className="event-card">
+            <h2>{event.name}</h2>
+            <p>Date: {event.date}</p>
+            <a href={event.url} target="_blank" rel="noopener noreferrer" className="event-link">More Details</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
